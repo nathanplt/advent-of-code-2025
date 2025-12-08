@@ -48,7 +48,6 @@ int count_reachable_rolls(std::vector<std::string>& grid) {
         count_reachable += count_removed;
     } while (count_removed > 0);
     
-
     return count_reachable;
 }
 
