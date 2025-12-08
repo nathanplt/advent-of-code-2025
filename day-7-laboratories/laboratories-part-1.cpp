@@ -24,7 +24,6 @@ int count_beam_splits(const std::vector<std::string>& grid){
             }
         }
     }
-
     
     std::vector<std::vector<bool>> visited(n, std::vector<bool>(m));
     int count_splits = 0;
