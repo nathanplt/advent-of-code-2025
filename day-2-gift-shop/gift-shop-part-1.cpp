@@ -10,12 +10,12 @@ struct Range {
 
 bool is_invalid_id(long long id) {
     std::string id_str = std::to_string(id);
-    size_t n = id_str.size();
+    std::size_t n = id_str.size();
     if (n % 2 != 0) {
         return false;
     }
 
-    for (size_t i = 0; i < n / 2; ++i) {
+    for (std::size_t i = 0; i < n / 2; ++i) {
         if (id_str[i] != id_str[i + n / 2]) {
             return false;
         }
