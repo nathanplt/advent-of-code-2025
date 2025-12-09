@@ -49,7 +49,7 @@ struct Edge {
 };
 
 
-long long sum_last_two_boxes(const std::vector<Coord>& coordinates) {
+long long product_last_two_boxes(const std::vector<Coord>& coordinates) {
     int n = static_cast<int>(coordinates.size());
 
     std::vector<Edge> edges;
@@ -108,6 +108,6 @@ int main() {
         coordinates.push_back({x, y, z});
     }
 
-    std::cout << sum_last_two_boxes(coordinates) << '\n';
+    std::cout << product_last_two_boxes(coordinates) << '\n';
 }
 
