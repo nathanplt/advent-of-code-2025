@@ -59,6 +59,6 @@ int main() {
         grid.push_back(row);
     }
     
-    std::cout << count_reachable_rolls(grid);
+    std::cout << count_reachable_rolls(grid) << '\n';
 }
 
